@@ -1,0 +1,120 @@
+:root{
+    --cor-texto: #FFFFFF;
+    --cinza-descrição: #C0C0C0;
+    --fonte-principal: 'Inter';
+    --cor-de-fundo: #231f20;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    font-size: 16px;
+    font-weight: 400;
+}
+.EVA{
+    width: 50%;
+    padding: 0 0 0 3em;
+}
+.conteudo{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.logo{
+    width: 30%;
+}
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+    font-size:16px ;
+}
+
+.container{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.segundario{
+    align-items: center;
+    margin: 0 0.1em;
+}
+.descriçao__titulo{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cor-texto);
+    margin-bottom: 0.1em;
+}
+.descriçao__texto{
+    color: var(--cinza-descrição);
+    font-size: 11px;
+    display: flex;
+}
+
+.rodape__fonte {
+    margin: 1em 0;
+    color: var(--cinza-descrição);
+    font-size: 14px;
+}
+.rodape {
+    text-align: center;
+    margin: 1em 1em;
+}
+.link a:hover{
+    color: var(--cor-texto);
+}
+.link a:active{
+    color: purple;
+}
+@media screen and (min-width: 768px) {
+    .EVA{
+        width: 50%;
+        padding: 0 0 0 5em;
+    }
+    .conteudo{
+        max-width: 1200px;
+        margin:0 auto;
+    }
+    .logo{
+        width: 30%;
+    }
+    .conteudo-titulo{
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .segundario{
+        align-items: center;
+        margin: 0 10em;
+    }
+    .descriçao__titulo{
+        font-weight: 700;
+        font-size: 48px;
+        color: var(--cor-texto);
+        margin-bottom: 0.1em;
+    }
+    .descriçao__texto{
+        color: var(--cinza-descrição);
+    }
+    
+    .rodape__fonte {
+        margin: 1em 0;
+        color: var(--cinza-descrição);
+        font-size: 14px;
+    }
+    .rodape {
+        text-align: center;
+        margin: 5em 3em;
+    }
+    .link a:hover{
+        color: var(--cor-texto);
+    }
+    .link a:active{
+        color: purple;
+    }
+}
