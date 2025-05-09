@@ -1,51 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <title>EVAS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>loja 2</title>
 </head>
 <body>
-    <section class="conteudo">
-        <div class="conteudo-titulo">
-            <img class="logo" src="img/neon-genesis-evangelion-logo-4.png" alt="Evangelion Neon Genesis">
-            <h1>Vamos ver as unidades EVA!</h1>
+    <header>
+        <div class="lista_botao">
+        <button class="botao ativo">home</button>
+        <button class="botao">Comput</button>
+        <button class="botao">Console</button>
+        <button class="botao">hardware</button>
+        </div>
+    </header>
+    <section class="secao_pesquisa">
+        <div class="botão_barra">
+        <input class="barra_pesquisa" type="text">
+        <button>enviar</button>
+        </div>
+        <div class="login">
+            <button class="botao_login"><a style="text-decoration: none; color: white;" href="login.html">Entrar</a></button>
         </div>
     </section>
-    <section class="container segundario">
-        <img class="EVA" src="img/Evangelion_Unit-00_Prototype_front.webp" alt="EVA00">
+    <section name="home" class="secao_item ativo">
         <div>
-            <h2 class="descriçao__titulo">EVA 00</h2>
-            <p class="descriçao__texto">Unit-00 é o Protótipo, o primeiro Evangelion de sucesso, e é pilotado pelo Primeiro Filho, Rei Ayanami. O design da cabeça é semelhante ao das tentativas anteriores fracassadas, mas com apenas uma câmera. Há duas cúpulas no topo da cabeça, uma branca e outra verde; sua função (se houver) nunca é revelada. A Unidade-00 é a única das Evangelions originais que nunca é vista sem sua armadura (a Unidade-02 foi revelada em O Fim de Evangelion, e a Unidade-01 em várias ocasiões) ou abrindo a boca; assim, a aparência de seu corpo orgânico é desconhecida.</p>
+        <h1 class="texto">Destaques</h1>
+        </div>
+        <div class="itens_loja">
+            <div class="item">
+                <img class="imagem_item" src="item_img/download.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/computador.webp" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+            <div class="item">
+                <img class="imagem_item" src="item_img/ps5.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/4090.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
         </div>
     </section>
-    <section class="container segundario">
-        <div class="container__descriçao">
-            <h2 class="descriçao__titulo">EVA 01</h2>
-            <p class="descriçao__texto">Unit-01 é, como todos os Evangelions, um humano artificial gigante (人造人間, Jinzō ningen?) com pele marrom. Tem uma boca semelhante à de um humano, bem como dois olhos verdes redondos. O rosto também tem quatro narinas pequenas e sangue vermelho. Sua verdadeira aparência é escondida sob armadura, chamada Type-B Gear, servindo também para limitar sua força real. A armadura Unit-01 é um modelo protótipo e, portanto, diferente dos modelos seguintes. Este consiste em duas grandes placas azuladas cobrindo os peitorais, bem como três peças triangulares no abdômen até a virilha.</p>
-            <p class="descriçao__texto">A armadura é predominantemente roxa com listras verdes nos braços e detalhes em preto. Seu gorget é composto por vários pedaços de cor amarelada/alaranjada. Seu elemento mais característico é, sem dúvida, seu capacete, único para cada Eva, com seu chifre proeminente e seu "colarinho", evocando vagamente o de um único oni de chifre.</p>
-        </div>
-        <img class="EVA" src="img/Evangelion_Unit-01_front1.webp" alt="EVA01">
-    </section>
-    <section class="container segundario">
-        <img class="EVA" src="img/Evangelion_Unit-02_V2_front.webp" alt="EVA02">
+    <section name="computador" class="secao_item">
         <div>
-            <h2 class="descriçao__titulo">EVA 02</h2>
-            <p class="descriçao__texto">A Unidade-02 é um Modelo de Produção Evangelion e usa o mesmo arranjo de armadura que a Unidade-03 e a Unidade-04 seguintes, juntamente com a Unidade-00 atualizada. Todos os Evangelion que usam este arranjo têm o mesmo design de pylon de ombro (com exceção dos Evangelions de Produção em Massa que eles não têm pilões de ombro) e cinco placas de armadura em forma de V em seu tronco.</p>
-            <p class="descriçao__texto">Este Evangelion é único por ter sangue roxo-azulado, pele azul-acinzentada e quatro olhos. (Todos os outros Evangelion possuem sangue vermelho e, para todos os Evangelion que não são de Produção em Massa, incluindo a Unidade-00, dois olhos e pele marrom são o padrão.) Os olhos são de cor laranja ardente uniforme.</p>
+        <h1 class="texto">Computadores</h1>
+        </div>
+        <div class="itens_loja">
+            <div class="item">
+                <img class="imagem_item" src="item_img/computador.webp" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/computador.webp" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+            <div class="item">
+                <img class="imagem_item" src="item_img/computador.webp" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/computador.webp" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
         </div>
     </section>
-    <footer class="rodape">
-        <h2>Fonte</h2>
-        <a class="rodape__fonte link" href="https://evangelion.fandom.com/wiki/Evangelion_Unit-00">https://evangelion.fandom.com/wiki/Evangelion_Unit-00</a>
-        <a class="rodape__fonte link" href="https://evangelion.fandom.com/wiki/Evangelion_Unit-01">https://evangelion.fandom.com/wiki/Evangelion_Unit-01</a>
-        <a class="rodape__fonte link" href="https://evangelion.fandom.com/wiki/Evangelion_Unit-02">https://evangelion.fandom.com/wiki/Evangelion_Unit-02</a>
+    <section name="console" class="secao_item">
+        <div>
+        <h1 class="texto">Console</h1>
+        </div>
+        <div class="itens_loja">
+            <div class="item">
+                <img class="imagem_item" src="item_img/ps5.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/ps5.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+            <div class="item">
+                <img class="imagem_item" src="item_img/ps5.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/ps5.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+        </div>
+    </section>
+    <section name="hardware" class="secao_item">
+        <div>
+        <h1 class="texto">hardware</h1>
+        </div>
+        <div class="itens_loja">
+            <div class="item">
+                <img class="imagem_item" src="item_img/4090.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/4090.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+            <div class="item">
+                <img class="imagem_item" src="item_img/4090.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+            <div class="item">
+                <img class="imagem_item" src="item_img/4090.jpg" alt="">
+                <div class="botao_texto_item">
+                    <h2 class="texto_item">$200</h2>
+                    <button class="botao_comprar">comprar</button>
+                </div>
+            </div> 
+
+        </div>
+    </section>
+    <footer>
+        <button class="botao_rodape"><</button>
+        <button class="botao_rodape">></button>
     </footer>
-    </section>
+
 </body>
+<script src="script/script.js"></script>
 </html>

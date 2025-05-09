@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body{
+    background-image: linear-gradient(#860092, #3e0070);
+    align-items: center;
+    color: var(--cor-do-texto);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1200px;
+    max-height: 1200px;
+    min-height: 700px;
+    justify-items: center;
+    min-width:346px;
+}
+section{
+    background-image: linear-gradient(#9303a7, #5b03a3);
+    padding:  10px 80px 20px 80px;
+    border-radius: 20px;
+}
+.conteudo_login{
+    color: white;
+}
+.texto_cadastro{
+    font-size: 20px;
+    font-weight: 100;
+}
+.botao{
+    display: flex;
+    width: 160px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.botao1{
+    background-color: #7f04e4;
+    border: none;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+}
+.botao2{
+    color: white;
+    background-color: #ea00ff;
+    border: none;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    margin-left: 10px;
+}
+.botao1:active{
+    background-color: #3f3f3f;
+}
+.botao2:active{
+    background-color: #3f3f3f;
+}
+.botao1:hover{
+    background-color: #420277;
+
+}
+.botao2:hover{
+    background-color: #770281;
+}

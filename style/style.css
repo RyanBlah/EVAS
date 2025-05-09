@@ -1,0 +1,236 @@
+/*importações*/
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/*variaveis*/
+
+:root{
+    --cor-de-fundo:#3f3f3f;
+    --cor-do-texto:#FFFFFF;
+    --cor-destaque:#00ff22;
+    --cor-botao-cabecalho:#6620A7;
+    --cor-botao-compra:#ff0000;
+    --cor-botao-compra-mouse:#c00000;
+}
+
+/*fundo*/
+
+body{
+    background-image: linear-gradient(#860092, #3e0070);
+    align-items: center;
+    color: var(--cor-do-texto);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1200px;
+    max-height: 1200px;
+    min-height: 700px;
+    justify-items: center;
+    min-width:346px;
+}
+
+/*cabeçalho onde fica os botões*/
+
+header{
+    width: 1200px;
+    width: 100%;
+}
+
+/*seção do meio*/
+
+section{
+    background-image: linear-gradient(#9303a7, #5b03a3);
+    width: 1200px;
+    width: 100%;
+    padding:1px 0 1px 0 ;
+}
+
+
+/*rodapé*/
+
+footer{
+    background-color:var(--cor-botao-cabecalho);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    width: 1200px;
+    width: 100%;
+}
+.botao_rodape{
+    border-style: hidden;
+    border: none;
+    background-color: var(--cor-botao-cabecalho);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--cor-do-texto);
+    margin:0 20px;
+    border-radius: 10px;
+}
+.botao_rodape:hover{
+    background-color: rgb(81, 27, 131);
+}
+.botao_rodape:active{
+    background-color: #3f3f3f;
+}
+
+/*Botões*/
+.lista_botao{
+    display: flex;
+
+}
+.botao{
+    color: var(--cor-do-texto);
+    border-style: double;
+    border:none;
+    width: 1200px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-botao-cabecalho);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(81, 27, 131);
+}
+.botao:first-child{
+    border-top-left-radius: 10px;
+}
+.botao:last-child{
+    border-top-right-radius: 10px;
+}
+.botao.ativo{
+    border: inset;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: var(--cor-destaque);
+    background-color: rgb(81, 27, 131);
+
+}
+
+/*itens*/
+
+.botao_comprar{
+    border-style: double;
+    border: none;
+    color: var(--cor-do-texto);
+    background-color: var(--cor-botao-compra);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.botao_comprar:hover{
+    background-color: var(--cor-botao-compra-mouse);
+}
+.botao_comprar:active{
+    background-color: #3f3f3f;
+}
+.texto_item{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.itens_loja{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.item{
+    display: flex;
+    width: 310px;
+}
+.imagem_item{
+    width: 200px;
+    height: 120px;
+    border-radius: 25px;
+    padding: 10px;
+}
+.secao_item{
+    display: none;
+}
+.secao_item.ativo{
+    display: block;
+}
+/*texto*/
+
+.texto{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/*pesquisa*/
+
+.secao_pesquisa{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(81, 27, 131), #9303a7);
+}
+
+.login{
+    width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.botao_login{
+    margin: 10px;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background-color: var(--cor-botao-cabecalho);
+}
+.botao_login:hover{
+    background-color: rgb( 81, 27, 131);
+}
+.botao:active{
+    background-color: #3f3f3f;
+}
+.barra_pesquisa{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: double;
+    border-color: rgb(150, 150, 150);
+}
+
+/*login*/
+
+
+/*modo de tela*/
+
+@media screen and (min-width: 700px) {
+
+    .botao {
+        width: 150px;
+    }
+section{
+    width: 700px;
+}
+footer{
+    width: 700px;
+}
+header{
+    justify-items: center;
+}
+body{
+    justify-content: center;
+}
+.lista_botao{
+    width: 700px;
+}
+.botao{
+    width: 700px;
+}
+
+}
